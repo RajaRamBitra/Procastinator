@@ -1,0 +1,164 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #111827;
+  background: #f3f4f6;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.dashboard {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.dashboard-header p {
+  margin: 0.5rem 0 0;
+  color: #4b5563;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 6px 20px rgba(17, 24, 39, 0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.banner {
+  border: 1px solid #f59e0b;
+  background: #fffbeb;
+  color: #78350f;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.task-card input[type='text'] {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font: inherit;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+button {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  font: inherit;
+  cursor: pointer;
+  background: #f9fafb;
+}
+
+button:hover {
+  background: #f3f4f6;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.timer-card {
+  text-align: center;
+}
+
+.timer-mode {
+  margin: 0;
+  color: #6b7280;
+}
+
+.timer-value {
+  margin: 0.5rem 0 1rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.mode-switch,
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.mode-switch {
+  margin-bottom: 1rem;
+}
+
+.mode-switch .active {
+  background: #111827;
+  color: #ffffff;
+  border-color: #111827;
+}
+
+progress {
+  width: 100%;
+  height: 0.9rem;
+}
+
+.progress-row + .progress-row {
+  margin-top: 1rem;
+}
+
+.progress-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.notifications-card p {
+  margin-bottom: 0.75rem;
+}
+
+.toast {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background: #111827;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.75rem;
+}
+
+.toast button {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.muted {
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
